@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Import Pixelify Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    /* Apply Pixelify Sans to the entire page */
+    body {
+      font-family: 'Pixelify Sans', cursive;
+      color: #fff;
+      margin: 2em;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+    }
+
+    .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #search-input {
+      width: 100%;
+      padding: 10px;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .watch-button {
+      margin-top: 10px;
+      display: block;
+      background: #a71fcf;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 1.2em;
+      border: none;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Spotify</h1>
+
+  <div id="yt"></div>
+
+  <form onsubmit="return false;">
+    <input id="search-input" type="text" placeholder="Paste: ...https://open.spotify.com/...">
+    <button class="watch-button" onclick="getSpotify()">Play Song/Playlist</button>
+  </form>
+
+  <p>you need to be logged in to hear the full song</p>
+  
+</body>
+</html>
+
+
